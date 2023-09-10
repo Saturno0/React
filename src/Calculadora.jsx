@@ -7,8 +7,8 @@ function Calculadora() {
   const handleButtonClick = (event) => {
     let buttonValue = event.target.innerText;
     let operator = event.target.id;
-    if (operator === 1 || operator === 0 || operator === 2 || operator === 3 || operator === 4 || operator === 5 || operator === 6 || operator === 7 || operator === 8 || operator === 9 || operator === 10) {
-      
+    if (operator === 0 || operator === 1 || operator === 2 || operator === 3 || operator === 4 || operator === 5 || operator === 6 || operator === 7 || operator === 8 || operator === 9) {
+        setNum(num + buttonValue);
     }
   };
 

@@ -1,4 +1,4 @@
-import Counter from './Counter.jsx'
+import Counter from './Contador.jsx'
 import Azar from './Azar.jsx'
 import Calculadora from './Calculadora.jsx';
 import './App.css'
