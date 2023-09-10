@@ -1,6 +1,7 @@
 import Counter from './Contador.jsx'
 import Azar from './Azar.jsx'
 import Calculadora from './Calculadora.jsx';
+import Login from './Loggin.jsx'
 import './App.css'
 
 const infoEmpleados = [
@@ -29,6 +30,7 @@ function App() {
       <button><a href="/contador">Contador</a></button>
       <button><a href='/azar'>Numero al azar</a></button>
       <button><a href='/calculadora'>Calculadora</a></button>
+      <button><a href='/loggin'>Loggin</a></button>
 
 
       {/*{infoEmpleados.map((employ)=> {

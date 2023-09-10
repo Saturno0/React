@@ -9,6 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
+import Login from './Loggin.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/azar',
     element: <Azar />
+  },
+  {
+    path: '/loggin',
+    element: <Login />
   }
 ]);
 
