@@ -32,6 +32,7 @@ function App() {
       <button><a href='/azar'>Numero al azar</a></button>
       <button><a href='/calculadora'>Calculadora</a></button>
       <button><a href='/loggin'>Loggin</a></button>
+      <button><a href='./reloj'>Reloj</a></button>
 
 
       {/*{infoEmpleados.map((employ)=> {
