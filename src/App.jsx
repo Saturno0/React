@@ -2,6 +2,7 @@ import Counter from './Contador.jsx'
 import Azar from './Azar.jsx'
 import Calculadora from './Calculadora.jsx';
 import Login from './Loggin.jsx'
+import Reloj from './reloj.jsx'
 import './App.css'
 
 const infoEmpleados = [
