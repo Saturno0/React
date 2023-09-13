@@ -10,11 +10,16 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import Login from './Loggin.jsx'
+import Reloj from './reloj.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/reloj',
+    element: <Reloj />
   },
   {
     path: '/contador',
