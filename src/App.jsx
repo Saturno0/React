@@ -3,6 +3,7 @@ import Azar from './Azar.jsx'
 import Calculadora from './Calculadora.jsx';
 import Login from './Loggin.jsx'
 import './App.css'
+import { useState } from 'react';
 
 const infoEmpleados = [
   {
@@ -23,7 +24,8 @@ const infoEmpleados = [
 ];
 
 function App() {
-
+  const [count, setCount ] = useState(0);
+  const [hidebutton, setHidebutton] = useState(false);
   return (
     <div className='App'>
       <h1>Practicas</h1>
@@ -31,6 +33,19 @@ function App() {
       <button><a href='/azar'>Numero al azar</a></button>
       <button><a href='/calculadora'>Calculadora</a></button>
       <button><a href='/loggin'>Loggin</a></button>
+
+      {/*<button onClick={() => {
+        setHidebutton(!hidebutton);
+        setCount(0);
+      }}>{hidebutton? "esconder contador": "mostrar contador"}</button>
+      {hidebutton? (
+        <div>
+          <h2>{count}</h2>
+          <button onClick={()=> setCount(count+1)}>sumar</button>
+        </div>
+      ) : (
+        <p></p>
+      )}*/}
 
 
       {/*{infoEmpleados.map((employ)=> {
