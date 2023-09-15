@@ -5,6 +5,8 @@ function Calculadora() {
   const [num, setNum] = useState('');
   const [a, setA] = useState(0);
   const [b, setB] = useState(0);
+  const [operacion, setOperacion] = useState(undefined);
+  const [resultado, setResultado] = useState(0);
 
 
   const handleButtonClick = (event) => {
@@ -12,30 +14,38 @@ function Calculadora() {
     let buttonValue = event.target.innerText;
     let operator = event.target.id;
     if (buttonValue === '0' || buttonValue === '1' || buttonValue === '2' || buttonValue === '3' || buttonValue === '4' || buttonValue === '5' || buttonValue === '6' || buttonValue === '7' || buttonValue === '8' || buttonValue === '9') {
+        setNum('');
         setB(0);
         setNum(num+ buttonValue);
-        setB(b+ (parseInt(num + buttonValue)));
-        console.log(a,b);
+        setB((parseInt(num + buttonValue)));
     } else {
       if (operator === 'res') {
-        console.log(a,b)
         setNum('');
-      } else if(operator === 'sum') {
-        console.log(a,b)
+        setA(0);
+        setB(0);
+        setResultado(0);
+        setOperacion(undefined);
+      } else if(operator === 'sum' || operator === 'men' || operator === 'div' || operator === 'mul') {
+        setA(b);
+        setB(0);
+        setOperacion(buttonValue);
         setNum(buttonValue);
-      } else if(operator === 'men') {
-        console.log(a,b)
-        setNum(buttonValue);
-      } else if(operator === 'div') {
-        console.log(a,b)
-        setNum(buttonValue);
-      } else if(operator === 'mul') {
-        console.log(a,b)
-        setNum(buttonValue);
+      } else {
+        if(operacion === '+') {
+          setResultado(a+b);
+        } else if(operacion === '-') {
+          setResultado(a-b);
+        } else if(operacion === '/') {
+          setResultado(parseFloat(a/b));
+        } else if(operacion === '*') {
+          setResultado(parseFloat(a*b));
       }
+      setNum(resultado.toString());
     }
-  };
-
+  }
+};
+  console.log(a,b);
+  console.log(resultado);
   return (
     <div>
       <p>{num}</p>
