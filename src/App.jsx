@@ -35,28 +35,6 @@ function App() {
       <button><a href='./pokemon'>Pokemon</a></button>
       <button><a href='./fulbo'>equipos</a></button>
 
-      {/*<button onClick={() => {
-        setHidebutton(!hidebutton);
-        setCount(0);
-      }}>{hidebutton? "esconder contador": "mostrar contador"}</button>
-      {hidebutton? (
-        <div>
-          <h2>{count}</h2>
-          <button onClick={()=> setCount(count+1)}>sumar</button>
-        </div>
-      ) : (
-        <p></p>
-      )}*/}
-
-
-      {/*{infoEmpleados.map((employ)=> {
-      const {nombre, apellido, edad} = employ;
-      return (
-        <h4>
-          El nombre es {nombre} {apellido} y su edad es {edad}
-        </h4>
-      )
-  })}*/}
     </div>
   )
 }
