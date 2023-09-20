@@ -1,10 +1,3 @@
-import Counter from './Contador.jsx'
-import Azar from './Azar.jsx'
-import Calculadora from './Calculadora.jsx';
-import Login from './Loggin.jsx'
-import Reloj from './reloj.jsx'
-import Hola from './conditional-render.jsx'
-//import Pokemon from './pokemon.jsx';
 import './App.css'
 import { useState } from 'react';
 
@@ -37,8 +30,10 @@ function App() {
       <button><a href='/calculadora'>Calculadora</a></button>
       <button><a href='/loggin'>Loggin</a></button>
       <button><a href='./reloj'>Reloj</a></button>
+      <button><a href='./cronometro'>Cronometro</a></button>
       <button><a href='./conditional-render'>Hola</a></button>
-      <button><a href='./pokemon'>Hola</a></button>
+      <button><a href='./pokemon'>Pokemon</a></button>
+      <button><a href='./fulbo'>equipos</a></button>
 
       {/*<button onClick={() => {
         setHidebutton(!hidebutton);

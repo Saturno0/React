@@ -13,6 +13,8 @@ import Login from './Loggin.jsx'
 import Reloj from './reloj.jsx'
 import Hola from './conditional-render.jsx'
 import Pokemon from './pokemon.jsx'
+import Fulbo from './Fulbo.jsx'
+import Cronometro from './Cronometro.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,8 +26,16 @@ const router = createBrowserRouter([
     element: <Pokemon />
   },
   {
+    path: '/fulbo',
+    element: <Fulbo />
+  },
+  {
     path: '/reloj',
     element: <Reloj />
+  },
+  {
+    path: '/cronometro',
+    element: <Cronometro />
   },
   {
     path: '/contador',
