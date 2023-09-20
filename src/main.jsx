@@ -11,11 +11,17 @@ import {
 } from 'react-router-dom';
 import Login from './Loggin.jsx'
 import Reloj from './reloj.jsx'
+import Hola from './conditional-render.jsx'
+import Pokemon from './pokemon.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />
+  },
+  {
+    path: '/pokemon',
+    element: <Pokemon />
   },
   {
     path: '/reloj',
@@ -32,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: '/azar',
     element: <Azar />
+  },
+  {
+    path: '/conditional-render',
+    element: <Hola />
   },
   {
     path: '/loggin',
