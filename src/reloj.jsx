@@ -22,7 +22,8 @@ const Reloj = () => {
 
     return(
         <div>
-            <h1>{hora}:{minutos}:{segundos}:{milisegundos}</h1>
+            <h1>Reloj:</h1>
+            <h1>{hora.toString().padStart(2,0)}:{minutos.toString().padStart(2,0)}:{segundos.toString().padStart(2,0)}:{milisegundos.toString().padStart(3,0)}</h1>
         </div>
     );
 }

@@ -15,6 +15,7 @@ import Hola from './conditional-render.jsx'
 import Pokemon from './pokemon.jsx'
 import Fulbo from './Fulbo.jsx'
 import Cronometro from './Cronometro.jsx'
+import Tiempo from './Tiempo.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/fulbo',
     element: <Fulbo />
+  },
+  {
+    path: '/tiempo',
+    element: <Tiempo />
   },
   {
     path: '/reloj',

@@ -19,8 +19,8 @@ const Cronometro = () => {
     return(
         <div>
             <h1>Cronometro</h1>
-            <button onClick={toggleTimer}>{timer? 'parar' : 'empzar'}</button>
             <h1>{m.toString().padStart(2,0)}:{s.toString().padStart(2,0)}:{mls.toString().padStart(2,0)}</h1>
+            <button onClick={toggleTimer}>{timer? 'parar' : 'empzar'}</button>
             <button onClick={()=>setTime(0)}>resetear</button>
         </div>
     );

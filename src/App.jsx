@@ -29,8 +29,7 @@ function App() {
       <button><a href='/azar'>Numero al azar</a></button>
       <button><a href='/calculadora'>Calculadora</a></button>
       <button><a href='/loggin'>Loggin</a></button>
-      <button><a href='./reloj'>Reloj</a></button>
-      <button><a href='./cronometro'>Cronometro</a></button>
+      <button><a href='/tiempo'>Tiempo</a></button>
       <button><a href='./conditional-render'>Hola</a></button>
       <button><a href='./pokemon'>Pokemon</a></button>
       <button><a href='./fulbo'>equipos</a></button>
