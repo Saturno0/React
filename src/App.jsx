@@ -1,39 +1,24 @@
+import { Route } from 'react-router-dom';
 import './App.css'
-import { useState } from 'react';
-
-const infoEmpleados = [
-  {
-      nombre: "Santino",
-      apellido: "M",
-      edad: "24"
-  },
-  {
-      nombre: "Matias",
-      apellido: "N",
-      edad: "21"
-  },
-  {
-      nombre: "Thiago",
-      apellido: "J",
-      edad: "22"
-  }
-];
+import Conditional_render from './conditional-render';
+import Azar from './Azar';
+import Calculadora from './Calculadora';
+import Contador from './Contador';
+import Fulbo from './fulbo';
+import Loggin from './Loggin';
+import Tiempo from './Tiempo';
 
 function App() {
-  const [count, setCount ] = useState(0);
-  const [hidebutton, setHidebutton] = useState(false);
   return (
     <div className='App'>
       <h1>Practicas</h1>
-      <button><a href="/contador">Contador</a></button>
-      <button><a href='/azar'>Numero al azar</a></button>
-      <button><a href='/calculadora'>Calculadora</a></button>
-      <button><a href='/loggin'>Loggin</a></button>
-      <button><a href='/tiempo'>Tiempo</a></button>
-      <button><a href='./conditional-render'>Hola</a></button>
-      <button><a href='./pokemon'>Pokemon</a></button>
-      <button><a href='./fulbo'>equipos</a></button>
-
+      <Route path='/Azar' element={<Azar/>}/>
+      <Route path='/Calculadora' element={<Calculadora/>}/>
+      <Route path='/Conditional-render' element={<Conditional_render/>}/>
+      <Route path='/Contador' element={<Contador/>}/>
+      <Route path='/Fulbo' element={<Fulbo/>}/>
+      <Route path='/Loggin' element={<Loggin/>}/>
+      <Route path='/Tiempo' element={<Tiempo/>}/>
     </div>
   )
 }
