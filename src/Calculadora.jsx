@@ -14,9 +14,8 @@ function Calculadora() {
     let buttonValue = event.target.innerText;
     let operator = event.target.id;
     if (buttonValue === '0' || buttonValue === '1' || buttonValue === '2' || buttonValue === '3' || buttonValue === '4' || buttonValue === '5' || buttonValue === '6' || buttonValue === '7' || buttonValue === '8' || buttonValue === '9') {
-        setNum('');
         setB(0);
-        setNum(num+ buttonValue);
+        setNum(num + buttonValue);
         setB((parseInt(num + buttonValue)));
     } else {
       if (operator === 'res') {
@@ -39,13 +38,10 @@ function Calculadora() {
           setResultado(parseFloat(a/b));
         } else if(operacion === '*') {
           setResultado(parseFloat(a*b));
+        }
       }
-      setNum(resultado.toString());
-    }
   }
 };
-  console.log(a,b);
-  console.log(resultado);
   return (
     <div>
       <p>{num}</p>

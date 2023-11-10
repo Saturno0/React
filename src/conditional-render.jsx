@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Hola = () => {
+const Contidional_render = () => {
     const [buttonValue, setButtonValue] = useState(false);
 
     return (
@@ -12,4 +12,4 @@ const Hola = () => {
     );
 }
 
-export default Hola
+export default Contidional_render
