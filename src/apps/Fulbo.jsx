@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Fulbo = () => {
-    const equipos = [
+        const equipos = [
         'Newells', 
         'Independiente',
         'Estudiantes',

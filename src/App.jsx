@@ -4,7 +4,7 @@ import Conditional_render from './apps/conditional-render';
 import Azar from './apps/Azar';
 import Calculadora from './apps/Calculadora';
 import Contador from './apps/Contador';
-import Fulbo from './apps/fulbo';
+import Fulbo from './apps/Fulbo';
 import Loggin from './apps/Loggin';
 import Tiempo from './apps/Tiempo';
 import MainPaige from './apps/MainPaige';
