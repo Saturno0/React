@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
-import Conditional_render from './conditional-render';
-import Azar from './Azar';
-import Calculadora from './Calculadora';
-import Contador from './Contador';
-import Fulbo from './fulbo';
-import Loggin from './Loggin';
-import Tiempo from './Tiempo';
-import MainPaige from './MainPaige';
+import Conditional_render from './apps/conditional-render';
+import Azar from './apps/Azar';
+import Calculadora from './apps/Calculadora';
+import Contador from './apps/Contador';
+import Fulbo from './apps/fulbo';
+import Loggin from './apps/Loggin';
+import Tiempo from './apps/Tiempo';
+import MainPaige from './apps/MainPaige';
 
 function App() {
   return (
