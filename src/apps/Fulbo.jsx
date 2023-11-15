@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Fulbo = () => {
         const equipos = [
@@ -34,16 +35,21 @@ const Fulbo = () => {
 
     return (
         <div>
-            <h1>Filtra equipos:</h1>
-            <input type="text" 
-                value={busqueda}
-                onChange={handleChange}
-            />
-            <ul>
-                {lista.map(equipo => (
-                    <li key={equipo}>{equipo}</li>
-                ))}
-            </ul>
+            <div className="Home">
+                <button><Link to="/">Home</Link></button>
+            </div>
+            <div>
+                <h1>Filtra equipos:</h1>
+                <input type="text" 
+                    value={busqueda}
+                    onChange={handleChange}
+                />
+                <ul>
+                    {lista.map(equipo => (
+                        <li key={equipo}>{equipo}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }

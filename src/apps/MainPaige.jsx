@@ -7,7 +7,6 @@ const MainPaige = () => {
             <h1>Practicas</h1>
             <button><Link to="/Azar">Azar</Link></button>
             <button><Link to="/Calculadora">Calculadora</Link></button>
-            <button><Link to="/Conditional-render">Conditional_render</Link></button>
             <button><Link to="/Contador">Contador</Link></button>
             <button><Link to="/Fulbo">Fulbo</Link></button>
             <button><Link to="/Loggin">Loggin</Link></button>
