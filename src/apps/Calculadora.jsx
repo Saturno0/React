@@ -59,7 +59,7 @@ function Calculadora() {
         <button><Link to="/">Home</Link></button>
       </div>
       <div>
-        <p>{num}</p>
+        <p id="num">{num}</p>
         <br />
         <div>
           <button onClick={handleButtonClick} id="7">7</button>
