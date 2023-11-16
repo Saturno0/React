@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import './Index.css'
+import { Link } from "react-router-dom";
+import './myCSS.css'
 
 function Calculadora() {
   const [num, setNum] = useState('');
@@ -54,32 +55,38 @@ function Calculadora() {
 };
   return (
     <div>
-      <p>{num}</p>
-      <br />
-      <div>
-        <button onClick={handleButtonClick} id="7">7</button>
-        <button onClick={handleButtonClick} id="8">8</button>
-        <button onClick={handleButtonClick} id="9">9</button>
-        <button onClick={handleButtonClick} id="div">/</button>
+      <div className="Home">
+        <button><Link to="/">Home</Link></button>
       </div>
       <div>
-        <button onClick={handleButtonClick} id="4">4</button>
-        <button onClick={handleButtonClick} id="5">5</button>
-        <button onClick={handleButtonClick} id="6">6</button>
-        <button onClick={handleButtonClick} id="mul">*</button>
+        <p>{num}</p>
+        <br />
+        <div>
+          <button onClick={handleButtonClick} id="7">7</button>
+          <button onClick={handleButtonClick} id="8">8</button>
+          <button onClick={handleButtonClick} id="9">9</button>
+          <button onClick={handleButtonClick} id="div">/</button>
+        </div>
+        <div>
+          <button onClick={handleButtonClick} id="4">4</button>
+          <button onClick={handleButtonClick} id="5">5</button>
+          <button onClick={handleButtonClick} id="6">6</button>
+          <button onClick={handleButtonClick} id="mul">*</button>
+        </div>
+        <div>
+          <button onClick={handleButtonClick} id="1">1</button>
+          <button onClick={handleButtonClick} id="2">2</button>
+          <button onClick={handleButtonClick} id="3">3</button>
+          <button onClick={handleButtonClick} id="men">-</button>
+        </div>
+        <div>
+          <button onClick={handleButtonClick} id="0">0</button>
+          <button onClick={handleButtonClick} id="igl">=</button>
+          <button onClick={handleButtonClick} id="sum">+</button>
+        </div>
+        <button onClick={handleButtonClick} id="res">resetear</button>
       </div>
-      <div>
-        <button onClick={handleButtonClick} id="1">1</button>
-        <button onClick={handleButtonClick} id="2">2</button>
-        <button onClick={handleButtonClick} id="3">3</button>
-        <button onClick={handleButtonClick} id="men">-</button>
-      </div>
-      <div>
-      <button onClick={handleButtonClick} id="0">0</button>
-      <button onClick={handleButtonClick} id="igl">=</button>
-      <button onClick={handleButtonClick} id="sum">+</button>
-      </div>
-      <button onClick={handleButtonClick} id="res">resetear</button>
+      
     </div>
   )
 }
