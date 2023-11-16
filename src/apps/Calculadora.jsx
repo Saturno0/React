@@ -49,7 +49,7 @@ function Calculadora() {
           setResultado(res);
           setNum(res);
         }
-        setNum(resultado);
+        setNum(resultado.toString());
       }
   }
 };
