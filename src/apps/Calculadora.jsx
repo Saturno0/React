@@ -10,6 +10,7 @@ function Calculadora() {
 
 
   const handleButtonClick = (event) => {
+    let res;
     setNum('');
     let buttonValue = event.target.innerText;
     let operator = event.target.id;
@@ -31,14 +32,23 @@ function Calculadora() {
         setNum(buttonValue);
       } else {
         if(operacion === '+') {
-          setResultado(a+b);
+          res = a+b;
+          setResultado(res);
+          setNum(res);
         } else if(operacion === '-') {
-          setResultado(a-b);
+          res = a-b;
+          setResultado(res);
+          setNum(res);
         } else if(operacion === '/') {
-          setResultado(parseFloat(a/b));
+          res = parseFloat(a/b);
+          setResultado(res);
+          setNum(res);
         } else if(operacion === '*') {
-          setResultado(parseFloat(a*b));
+          res = parseFloat(a*b);
+          setResultado(res);
+          setNum(res);
         }
+        setNum(resultado);
       }
   }
 };
